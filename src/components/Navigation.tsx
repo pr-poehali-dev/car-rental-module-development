@@ -33,6 +33,12 @@ const Navigation = () => {
             >
               Профиль
             </Link>
+            <Link
+              to="/admin"
+              className={`font-medium ${location.pathname === "/admin" ? "text-blue-600" : "text-gray-700 hover:text-blue-600"}`}
+            >
+              Админ
+            </Link>
             <Link to="/auth">
               <Button>Войти</Button>
             </Link>
